@@ -1,4 +1,4 @@
-# Portafolio de Proyectos de Isael Javier Fatama Godoy
+# Proyectos - LandingPage
 
 ¡Hola! 👋 Bienvenido a mi repositorio de proyectos de Landing Page, página web y más. Aquí encontrarás una colección de mis trabajos y proyectos relacionados con el desarrollo web.
 
