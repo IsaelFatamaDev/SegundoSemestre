@@ -5,3 +5,5 @@
 - 📧 Correo electrónico: isael.fatama@vallegrande.edu.pe
 - 📱 LinkedIn: [linkedin.com/in/isaelfatamadev](https://www.linkedin.com/in/isael-fatama-655615274/)
 
+# Primer Proyecto - GI06
+![Portada de la web](./img/Primer%20LandingPage.png)
