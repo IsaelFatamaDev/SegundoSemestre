@@ -168,14 +168,13 @@ section {
 header.sticky {
     padding: 8px 17%;
     background: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
 }
 
 .nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 9rem;
     /*background-color: #005185;*/
     background-color: #07294d;
     margin-top: -50px;
@@ -209,10 +208,9 @@ header.sticky {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 9rem;
     background-color: #005185;
     margin-top: -50px;
-
+    grid: 4rem;
 }
 
 .historia img {
@@ -228,6 +226,7 @@ header.sticky {
     line-height: 1.2;
     margin-bottom: 25px;
     font-family: 'Cabin', sans-serif;
+    margin-right: 20px;
 }
 
 .historia-text p {
@@ -241,6 +240,11 @@ header.sticky {
 /*
     SECCIÓN DE MISION Y VISION CON TARJETAS
 */
+
+.mision {
+    background-color: #005185;
+}
+
 .mision2 {
     display: flex;
     flex-wrap: wrap;
@@ -250,9 +254,10 @@ header.sticky {
 }
 
 .mision2-text h2 {
-    font-size: 30px;
-    color: rgb(32, 31, 31);
-    font-weight: 800;
+    font-size: 40px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-shadow: 0 0 5px;
     line-height: 1.2;
     font-family: 'Cabin', sans-serif;
     text-align: center;
@@ -346,12 +351,50 @@ header.sticky {
     margin-top: 20px;
 }
 
+
+/*Sección del video*/
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #07294d;
+}
+
+.video-title {
+    font-size: var(--h2-font);
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-section h3 {
+    margin-top: 24px;
+    color: var(--bg-color);
+}
+
 .btn2 {
     display: inline-block;
     padding: 13px 40px;
-    background-color: var(--main-color);
+    background-color: red;
     margin-top: 20px;
-    color: var(--text-color);
+    color: var(--bg-color);
     font-size: 18px;
     font-weight: 600;
     border: 2px solid transparent var(--main-color);
@@ -361,9 +404,123 @@ header.sticky {
 }
 
 .btn2:hover {
-    transform: translateX(10px);
-    border: 2px solid var(--text-color);
+    transform: translateY(10px);
+    border: 2px solid red;
     background: transparent;
-    color: var(--text-color);
+    color: red;
     text-shadow: 0 0 9px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #005185;
+    color: #fff;
+    padding: 30px;
+}
+
+.footer-content {
+    max-width: 88%;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+
+@media(max-width: 1700px) {
+    header {
+        padding: 18px 8%;
+    }
+
+    header.sticky {
+        padding: 7px 8%;
+    }
+
+    section {
+        padding: 50px 8% 40px;
+    }
+}
+
+@media(max-width: 1200px) {
+    header {
+        padding: 14px 5%;
+    }
+
+    header.sticky {
+        padding: 7px 5%;
+    }
+
+    section {
+        padding: 45px 5% 35px;
+    }
+
+    :root {
+        --h1-font: 4.6rem;
+        --h2-font: 2.8rem;
+        --p-font: 15px;
+    }
+
+    .home {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .nosotros {
+        gap: 3rem;
+    }
+
+    .historia {
+        gap: 3rem;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--text-color);
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        color: #979797;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .navbar.open {
+        left: 0;
+    }
 }
