@@ -6,6 +6,6 @@
 - 📱 LinkedIn: [linkedin.com/in/isaelfatamadev](https://www.linkedin.com/in/isael-fatama-655615274/)
 
 # Primer Proyecto - GI06    
-Link de acceso: https://loquacious-speculoos-75ab1c.netlify.app/
+Link de acceso: https://dazzling-unicorn-fa1eb9.netlify.app/
 
 ![Portada de la web](./img/Primer%20LandingPage.png)
