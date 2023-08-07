@@ -6,7 +6,6 @@
 
 ¡Hola, soy Isael Javier Fatama Godoy! Soy un apasionado desarrollador web con experiencia en la creación de Landing Pages, sitios web y aplicaciones web. Me encanta experimentar con nuevas tecnologías y seguir aprendiendo para mejorar mis habilidades.
 
-- 🌐 Sitio web personal: [www.isaelfatamadev.com](https://www.isaelfatamadev.com)
 - 📧 Correo electrónico: isael.fatama@vallegrande.edu.pe
 - 📱 LinkedIn: [linkedin.com/in/isaelfatamadev](https://www.linkedin.com/in/isael-fatama-655615274/)
-- 🐦 Twitter: [@IsaelFatamaDev](https://twitter.com/IsaelFatamaDev)
+
