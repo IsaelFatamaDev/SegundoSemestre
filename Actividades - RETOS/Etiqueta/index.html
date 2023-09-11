@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño Lógico</title>
+    <link rel="stylesheet" href="../Etiqueta/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+            <a href="#">Valle Grande</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Diseño Lógico - Base de Datos</h1>
+        <section>
+            <img src="./img/Base1.png" class="imagen">
+            <img src="./img/Base2.png" class="imagen">
+            <img src="./img/Base3.png" class="imagen">
+        </section>
+        <section class="seccion">
+            <p>
+                Una base de datos es una recopilación de datos sistemática y almacenada electrónicamente. Puede contener
+                cualquier tipo de datos, incluidos palabras, números, imágenes, vídeos y archivos. Puede usar un
+                software denominado sistema de administración de bases de datos (DBMS) para almacenar, recuperar y
+                editar datos.
+
+            </p>
+            <a class="ver" href="https://vallegrande.edu.pe/">VER MÁS</a>
+        </section>
+        <br>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T5Wki0jbj48"
+                title="Diseño lógico de base de datos con vertabelo (parte 2)" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section>
+            <p>
+                <strong>Calendario</strong>
+                <br>
+                <label for="start">Selecciona una fecha:</label>
+                <input type="date" id="start" name="trip-start" value="2023-09-11" min="2023-01-01" max="2023-12-31" />
+            </p>
+            <div id="calendario"></div>
+            <section>
+                <p id="fechaSeleccionada"></p>
+            </section>
+        </section>
+        <section>
+            <button class="boton" onclick="verDia()">Ver día</button>
+        </section>
+
+    </main>
+    <footer>
+        <h4>Elaborado por Isael Fatama Godoy</h4>
+    </footer>
+    <script>
+        function verDia() {
+            var inputFecha = document.getElementById("start");
+            var fechaSeleccionada = new Date(inputFecha.value);
+
+            var dia = fechaSeleccionada.getDate() + 1;
+            var mes = fechaSeleccionada.getMonth();
+            var año = fechaSeleccionada.getFullYear();
+
+            var nombresDeMeses = [
+                "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+            ];
+
+            var fechaFormateada = "La fecha que colocaste es " + dia + " de " + nombresDeMeses[mes] + " del " + año;
+
+            var fechaSeleccionadaElement = document.getElementById("fechaSeleccionada");
+            fechaSeleccionadaElement.textContent = fechaFormateada;
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

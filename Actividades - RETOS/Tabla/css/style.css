@@ -1,0 +1,278 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de la barra de navegación */
+.nav {
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    /* Efecto de cristal */
+}
+
+.nav .header-title {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 123, 255, 0.9);
+}
+
+
+/* Estilos de la sección de introducción */
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin: 0 0 10px;
+    text-align: center;
+    color: #007BFF;
+    
+}
+
+.section-title:hover {
+    color: chocolate;
+    text-shadow: 0 0 9px;
+}
+
+.section-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+
+}
+
+.section-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    border-radius: 50px;
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.table-header {
+    background-color: #bb0a0a;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 22px;
+
+}
+
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para enlaces dentro de la tabla */
+.table a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.table a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Estilos para enlaces */
+a {
+    text-decoration: none;
+    color: #00f7ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las secciones dentro de <main> */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+section li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+section strong {
+    font-weight: bold;
+    color: #333;
+}
+
+
+.record-table,
+.nivel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.record-table th,
+.record-table td,
+.nivel-table th,
+.nivel-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.record-table th,
+.nivel-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.record-table tr:nth-child(even),
+.nivel-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.record-table img,
+.nivel-table img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Estilos para la galería */
+.gallery {
+    margin: 20px auto; /* Centra la galería horizontalmente */
+    text-align: center; /* Centra el contenido de la galería */
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+    background-color: #f9f9f9; /* Color de fondo de los elementos de la galería */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.gallery-image {
+    max-width: 100%;
+    border-radius: 10px; /* Borde redondeado para la imagen */
+}
+
+.winner-name {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.header-title {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.header-title:hover {
+    text-decoration: underline;
+}
