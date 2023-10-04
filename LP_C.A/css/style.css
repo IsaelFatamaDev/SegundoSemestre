@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --text-color: #000000;
+    --bg-color: #fff;
+    --main-color: #ff6200;
+    --botton-color: #49BCD8;
+    --drop-color: #d8a200;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease-out;
+}
+
+.logo img {
+    width: 110px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    border-bottom: 5px solid var(--drop-color);
+    color: var(--bg-color);
+    text-shadow: 0 40px 50px;
+    padding: 15px;
+}
+
+.active {
+    border-bottom: 5px solid var(--drop-color);
+    color: var(--bg-color);
+    text-shadow: 0 40px 50px;
+    padding: 15px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: var(--bg-color);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.navbar .dropdown-menu li {
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar li:hover .dropdown-menu {
+    display: block;
+    background: #ffffffd0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.navbar .dropdown-menu a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.navbar .dropdown-menu a:hover {
+    border-bottom: 5px solid var(--drop-color);
+    padding: 10px;
+    color: var(--text-colorr);
+    border-radius: 0;
+    text-shadow: 0 0 8px var(--botton-color);
+}
+
+section {
+    padding: 70px 17% 60px;
+}
+
+.portada {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.34)), url(../img/Castillo-Unanue.jpg);
+    background-size: cover;
+    background-position: bottom top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portada-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--bg-color);
+    text-shadow: 0 0 9px var(--bg-color);
+}
+
+.portada-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--bg-color);
+    text-shadow: 0 0 9px var(--bg-color);
+}
+
+@media(max-width: 1800px) {
+    header {
+        padding: 18px 8%;
+    }
+
+    header.sticky {
+        padding: 7px 8%;
+    }
+
+    section {
+        padding: 50px 8% 40px;
+    }
+}
+
+@media(max-width: 1200px) {
+    header {
+        padding: 14px 5%;
+    }
+
+    header.sticky {
+        padding: 7px 5%;
+    }
+
+    section {
+        padding: 45px 5% 35px;
+    }
+
+    :root {
+        --h1-font: 4.6rem;
+        --h2-font: 2.8rem;
+        --p-font: 15px;
+    }
+
+    .portada {
+        height: 90vh;
+    }
+}

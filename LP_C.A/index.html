@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cañete</title>
+    <link rel="stylesheet" href="./img/Castillo-Unanue.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/cañete-lg-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo"><img src="./img/cañete-lg-removebg-preview.png" alt=""></a>
+        <ul class="navbar">
+            <li><a href="" class="active">Inicio</a></li>
+
+            <li><a href="">Historia</a></li>
+            <li><a href="">Distritos</a>
+                <ul class="dropdown-menu">
+
+                </ul>
+            </li>
+            <li><a href="">Gastronomia</a></li>
+        </ul>
+    </header>
+    <section id="inicio" class="portada">
+        <div class="portada-text">
+            <h1>Cañete</h1>
+            <h2>"Cuna y Capital del Arte Negro Nacional"</h2>
+        </div>
+    </section>
+    <script>
+        var distritos = ["San Vicente",
+            "Asia",
+            "Calango",
+            "Cerro Azul",
+            "Coayllo",
+            "Chilca",
+            "Imperial",
+            "Lunahuaná",
+            "Mala",
+            "Nuevo Imperial",
+            "Pacarán",
+            "Quilmaná",
+            "San Antonio",
+            "San Luis",
+            "Santa Cruz de Flores",
+            "Zúñiga"];
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdownMenu = document.querySelector(".dropdown-menu");
+
+            for (var i = 0; i < distritos.length; i++) {
+                var listItem = document.createElement("li");
+                var anchor = document.createElement("a");
+                anchor.href = "#";
+                anchor.textContent = distritos[i];
+                listItem.appendChild(anchor);
+                dropdownMenu.appendChild(listItem);
+            }
+        });
+
+        /*
+                var distritos = [
+                    { nombre: "San Vicente", url: "sanvicente.html" },
+                    { nombre: "Asia", url: "asia.html" },
+                    { nombre: "Calango", url: "calango.html" },
+        
+                ];
+                document.addEventListener("DOMContentLoaded", function () {
+                    var dropdownMenu = document.querySelector(".dropdown-menu");
+        
+                    for (var i = 0; i < distritos.length; i++) {
+                        var listItem = document.createElement("li");
+                        var anchor = document.createElement("a");
+                        anchor.href = distritos[i].url; // urldelhtml
+                        anchor.textContent = distritos[i].nombre;
+                        listItem.appendChild(anchor);
+                        dropdownMenu.appendChild(listItem);
+                    }
+                });*/
+
+    </script>
+</body>
+
+</html>

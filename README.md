@@ -5,7 +5,14 @@
 - 📧 Correo electrónico: isael.fatama@vallegrande.edu.pe
 - 📱 LinkedIn: [linkedin.com/in/isaelfatamadev](https://www.linkedin.com/in/isael-fatama-655615274/)
 
-# Primer Proyecto - GI06    
+# - Primer Proyecto - GI06
+
 Link de acceso: https://dazzling-unicorn-fa1eb9.netlify.app/
 
 ![Portada de la web](./img/Primer%20LandingPage.png)
+
+# - RETO - ALTERNANCIA 03
+
+![Alt text](./LP_C.A/img/image.png)
+
+**Reto que se irá actualizando, en clase en clase**
