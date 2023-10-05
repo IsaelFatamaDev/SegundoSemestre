@@ -1,0 +1,37 @@
+    1  sudo apt update && sudo apt upgrade -y
+    2  sudo apt install mysql-server -y
+    3  sudo su
+    4  sudo mysql_secure_installation
+    5  sudo mysql -u root
+
+    --Dentro de mysql : root
+        - SELECT user, host FROM mysql.user WHERE user = 'root' AND host = 'localhost';
+        - mysql> SELECT user, host FROM mysql.user WHERE user = 'root' AND host = 'localhost';
+        - mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY '12345';
+        - exit
+    --
+
+    6  sudo mysql -u root -p
+
+    --Creamos user
+        - CREATE USER 'isael'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'fatama123';
+        - GRANT ALL PRIVILEGES ON * . * TO 'isael'@'localhost';
+        - FLUSH PRIVILEGES;
+        - exit
+
+    7  sudo mysql_secure_installation
+    8  sudo mysql -u isael -p
+   12  history > comandos.txt
+
+    --Instalar Git
+    13  sudo apt install git
+    14  git --version
+    15  git config --global user.name "IsaelFatamaDev"
+    16  git config --global user.email isael.fatama@vallegrande.edu.pe
+    17  pwd
+    18  git clone https://github.com/IsaelFatamaDev/SegundoSemestre.git
+    19  cd SegundoSemestre/
+    20  sudo mkdir 1.Inicio
+    21  sudo cp /home/ubuntu/comandos.txt /home/ubuntu/SegundoSemestre/1.\Inicio/
+    
+

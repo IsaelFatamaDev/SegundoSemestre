@@ -1,3 +1,6 @@
-# SegundoSemestre
 
-Archivos de actividades en el Segundo Semestre de la Carrera de Análisis de Sistemas.
+  # Sistemas Operativos
+
+  ## Actividades de comandos Linux
+
+  1. Instalación de Base de Datos Mysql en Ubuntu
