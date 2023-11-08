@@ -2,45 +2,140 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Mundo Ecológico</title>
-      <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-      <link rel="shortcut icon" href="./img/LogoGeneral-removebg-preview.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./usuario/style.css">
+    <title>Mundo Ecológico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./img/LogoGeneral-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-      <header>
-            <a href="" class="logo"><img src="./img/Logo.png" alt=""></a>
-            <ul class="navbar">
-                  <li><a href="#inicio">Inicio</a></li>
-                  <li><a href="#nosotros">Somos</a></li>
-                  <li><a href="#video">Productos</a></li>
-                  <li><a href="#footer">Contáctanos</a></li>
-            </ul>
+    <header class="header">
+        <a href="" class="logo"><img src="./usuario/img/Logo.png" alt="">Mundo Ecológico</a>
+        <div class="logo">
+            <img id="carrito" class="carrito" src="./usuario/img/carrito-de-compras.png" alt="">
+            <div id="numero"></div>
+        </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-            <div class="h-right">
-                  <a href="https://www.facebook.com/tecnologiaVG"><i class="ri-facebook-fill"></i></a>
-                  <a href="https://www.instagram.com/valle_grande_oficial/"><i class="ri-instagram-fill"></i></a>
-                  <a href="https://www.youtube.com/channel/UCAy8Qkj1AQuqnKiogNdshBA"><i class="ri-youtube-fill"></i></a>
-                  <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
-      </header>
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Productos</a>
+            <a href="#">Servicios</a>
+            <a href="./admin/admin.html">Admin</a>
 
-      <section id="inicio" class="home">
-            <div class="home-text">
-                  <h4>Bienvenidos a</h4>
-                  <h1>Mundo Ecológico</h1>
-                  <a href="#nosotros" class="btn">Explora</a>
+        </nav>
+
+    </header>
+    <div class="nav-bg"></div>
+    <section id="inicio" class="home">
+        <div class="home-text">
+            <h4>Bienvenidos a</h4>
+            <h1>Mundo Ecológico</h1>
+            <a href="#nosotros" class="explora">Explora</a>
+        </div>
+        <img src="./usuario/img/bottom_wave.png" alt="" class="wave">
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h2 class="deco-title">Nosotros</h2>
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="./usuario/img/about.png" alt="">
             </div>
-      </section>
-      <script src="./js/script.js"></script>
+
+            <div class="content">
+                <h3 class="title">Buscamos preservar las especies</h3>
+                <p>La empresa ficticia "Mundo Ecológico" tiene un claro propósito: preservar las especies y cuidar
+                    nuestro planeta. Con la
+                    visión de promover un estilo de vida más sostenible, la empresa se ha embarcado en una emocionante
+                    aventura</p>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <main>
+        <div class="contenedor2">
+            <h2>Seccion de Productos</h2>
+        </div>
+        <div id="contenedor" class="contenedor"> </div>
+    </main>
+
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            <h2>Cesta</h2>
+            <p class="x" id="x">x</p>
+        </div>
+
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Finalizar Compra</button>
+    </div>
+
+
+    <section>
+        <div class="container">
+            <h3 class="title">Formulario Mundo Ecológico</h3>
+            <form action="procesar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nombre_apellido">Nombre y Apellido:</label>
+                    <input type="text" id="nombre_apellido" name="nombre_apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="dni">Número de DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label for="codigo_postal">Código Postal:</label>
+                    <input type="text" id="codigo_postal" name="codigo_postal" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario (máx. 100 caracteres):</label>
+                    <textarea id="comentario" name="comentario" maxlength="100" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script src="./usuario/main.js"></script>
+    <script src="./usuario/script.js"></script>
 </body>
 
 </html>
