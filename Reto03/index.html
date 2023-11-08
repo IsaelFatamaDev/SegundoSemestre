@@ -27,6 +27,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+
 </head>
 
 <body>
@@ -101,39 +102,57 @@
         <button>Finalizar Compra</button>
     </div>
 
+    s
+    <section class="form-seccion">
+        <h2>Contactanos</h2>
+        <div class="formContacto">
+            <div class="contacto">
 
-    <section>
-        <div class="container">
-            <h3 class="title">Formulario Mundo Ecológico</h3>
-            <form action="procesar_formulario.php" method="post">
-                <div class="form-group">
-                    <label for="nombre_apellido">Nombre y Apellido:</label>
-                    <input type="text" id="nombre_apellido" name="nombre_apellido" required>
-                </div>
-                <div class="form-group">
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                </div>
-                <div class="form-group">
-                    <label for="dni">Número de DNI:</label>
-                    <input type="text" id="dni" name="dni" required>
-                </div>
-                <div class="form-group">
-                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-                </div>
-                <div class="form-group">
-                    <label for="codigo_postal">Código Postal:</label>
-                    <input type="text" id="codigo_postal" name="codigo_postal" required>
-                </div>
-                <div class="form-group">
-                    <label for="comentario">Comentario (máx. 100 caracteres):</label>
-                    <textarea id="comentario" name="comentario" maxlength="100" required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
+                <img src="./usuario/img/banner_1.png" alt="">
+            </div>
+            <div class="container">
+                <h3 class="title">Formulario Mundo Ecológico</h3>
+                <form action="https://formsubmit.co/isael.fatama@vallegrande.edu.pe" method="post">
+                    <div class="form-group">
+                        <label for="nombre_apellido">Nombre y Apellido:</label>
+                        <input type="text" id="nombre_apellido" name="nombre_apellido" required pattern="[A-Za-z\s]+"
+                            title="Solo se permiten letras y espacios">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">Número de DNI:</label>
+                        <input type="text" id="dni" name="dni" required pattern="[0-9]{8}"
+                            title="Debe contener 8 dígitos numéricos">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required min="1900-01-01"
+                            max="2023-12-31">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" required pattern="[0-9]{5}"
+                            title="Debe contener 5 dígitos numéricos">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">Comentario (máx. 100 caracteres):</label>
+                        <textarea id="comentario" name="comentario" maxlength="100" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/Reto03/index.html" />
+                    <input type="hidden" name="_captcha" value="false" />
+                </form>
+            </div>
         </div>
     </section>
+
+
     <script src="./usuario/main.js"></script>
     <script src="./usuario/script.js"></script>
 </body>

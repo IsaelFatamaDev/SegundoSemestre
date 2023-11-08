@@ -355,6 +355,7 @@ header.sticky {
 
 .contenedor>div>img {
     width: 200px;
+    height: 200px;
 }
 
 .contenedor>div:hover {
@@ -589,7 +590,7 @@ header.sticky {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     margin: 20px auto;
     background-color: #fff;
@@ -598,9 +599,14 @@ header.sticky {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.contacto h2 {
+    text-align: center;
+}
+
 .title {
     font-size: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .form-group {
@@ -635,4 +641,124 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.form-seccion {
+    padding: 20px 4px 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.form-seccion h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 80px;
+    text-align: center;
+}
+
+.formContacto {
+    gap: 200px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 8rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-top: .1rem solid var(--main);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+
+    .home {
+        background-position: left;
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .deco-title {
+        display: none;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+
+    .contenedor>div {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        background-color: var(--main);
+        border-radius: 20px;
+    }
+
+    .contenedor>div>img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor>div:hover {
+        background-color: var(--main-color);
+        color: white;
+        font-weight: 900;
+    }
+
+    .contenedor2 h2 {
+        font-size: 28px;
+    }
+
+    .form-seccion {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
